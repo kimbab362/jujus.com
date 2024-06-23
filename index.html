@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김준수의 웹사이트 by ChatGPT</title>
+    <style>
+        body {
+            font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #f7d794, #a29bfe);
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            border-bottom: 3px solid #fff;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showContent(contentId) {
+            document.querySelectorAll('.content').forEach(content => content.style.display = 'none');
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        김준수의 웹사이트 by ChatGPT
+    </header>
+    <nav>
+        <a href="#" onclick="showContent('content1')">생윤 수행 하기 싫다</a>
+        <a href="#" onclick="showContent('content2')">시험 망했다</a>
+        <a href="#" onclick="showContent('content3')">이거 신기하지 않음?</a>
+    </nav>
+    <div class="container">
+        <div id="content1" class="content" style="display: none;">
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+            <p>생윤 수행 하기 싫다</p>
+        </div>
+        <div id="content2" class="content" style="display: none;">
+            <p>10과목 공부 어떻게 함?</p>
+        </div>
+        <div id="content3" class="content" style="display: none;">
+            <p>GPT한테 부탁했더니 해줌 다들 한번씩 고고</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 김준수의 웹사이트. 모든 권리 보유.
+    </footer>
+</body>
+</html>
